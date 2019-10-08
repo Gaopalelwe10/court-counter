@@ -1,0 +1,215 @@
+<ion-header>
+    <ion-toolbar color="warning">
+        <ion-title>
+            Court Counter
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+
+    <br>
+    <table>
+        <tr>
+            <td class="v1">
+
+                <ion-label>
+                    <h1>Team A</h1>
+                </ion-label>
+                <ion-label>
+                    <br>
+                    <h1>{{totalA}}</h1>
+                </ion-label>
+                <br>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_A(-4)">-4</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonA(+4)">+4</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_A(-3)">-3</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonA(+3)">+3</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_A(-2)">-2</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonA(+2)">+2</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_A(-1)">-1</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonA(+1)">+1</ion-button>
+                    </td>
+                </tr>
+
+            </td>
+
+            <div class="v"></div>
+
+            <td class="v2">
+
+                <ion-label>
+                    <h1>Team B</h1>
+                </ion-label>
+                <ion-label>
+                    <br>
+                    <h1>{{totalB}}</h1>
+                </ion-label>
+                <br>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_B(-4)">-4</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonB(+4)">+4</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_B(-3)">-3</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonB(+3)">+3</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_B(-2)">-2</ion-button>
+
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonB(+2)">+2</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning btn" (click)="button_B(-1)">-1</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning btn" (click)="buttonB(+1)">+1</ion-button>
+
+                    </td>
+                </tr>
+
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- <table class="table">
+        <tr>
+            <th class="v">
+                <ion-label>
+                    <h1>Team A</h1>
+                </ion-label>
+                <ion-label>
+                    <br>
+                    <h1>{{teamA}}</h1>
+                </ion-label><br>
+            </th>
+            <th class="v2">
+                <ion-label>
+                    <h1>Team B</h1>
+                </ion-label>
+                <ion-label>
+                    <br>
+                    <h1>{{teamB}}</h1>
+                </ion-label><br>
+            </th>
+        </tr>
+        <tr>
+            <td class="v">
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(-4)">-4</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(+4)">+4</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(-3)">-3</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(+3)">+3</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(-2)">-2</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(+2)">+2</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(-1)">-1</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonA(+1)">+1</ion-button>
+                    </td>
+                </tr>
+            </td>
+            <td class="v2">
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(-4)">-4</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(+4)">+4</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(-3)">-3</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(+3)">+3</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(-2)">-2</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(+2)">+2</ion-button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(-1)">-1</ion-button>
+                    </td>
+                    <td>
+                        <ion-button color="warning" (click)="buttonB(+1)">+1</ion-button>
+                    </td>
+                </tr>
+            </td>
+        </tr>
+    </table>  -->
+
+    <br>
+    <div class="bottom">
+        <ion-button color="warning" (click)="reset()">RESET</ion-button>
+    </div>
+</ion-content>
